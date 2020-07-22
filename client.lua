@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
 		local vehicle = GetVehiclePedIsIn(playerPed, false)
 		local speed = (GetEntitySpeed(vehicle))
 		local InVeh = IsPedInVehicle(playerPed, vehicle, false)
-		if IsControlJustPressed(1, 47) and InVeh then
+		if IsControlJustPressed(1, 47) and InVeh and speed > 0 then
 			if a == false then
 				SetEntityMaxSpeed(vehicle, speed)
 				a = true
