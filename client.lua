@@ -7,6 +7,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(10)
 		
 		if IsControlJustPressed(1, 47) then
+			setSpeedLimit()
 		end
 		
 	end
